@@ -1,52 +1,50 @@
+import { Web3Provider } from '@ethersproject/providers';
 import { useCallback, useState } from 'react';
 
 import { isProviderRpcError } from '@/src/ethers/errors';
-import { useAccount, useProvider } from '@/src/ethers/hooks';
+import { useAccount } from '@/src/ethers/hooks';
 
 export function useEstimateGasCoinFee() {
-  const { provider } = useProvider();
   const { account } = useAccount();
   const [error, setError] = useState<string | null>(null);
 
   const getSendCoinFee = useCallback(
     async (toAddress: string, amount: bigint) => {
       try {
-        if (provider) {
-          // const a = new Interface(TOKENS['usdt'].abi).encodeFunctionData('transfer', [
-          //   '0xD02AfF6ec46e081137453D33743DE12a0b7D9001',
-          //   0.001,
-          // ]);
-          //
-          // console.log(a);
-          const feeData = await provider.getFeeData();
-          const maxFeePerGas = feeData.maxFeePerGas;
-          // const maxFeePerGas = 0n;
-          // const maxPriorityFeePerGas = 0n;
-          const maxPriorityFeePerGas = feeData.maxPriorityFeePerGas;
+        // TODO why only this provider return maxFeePerGas and maxPriorityFeePerGas
+        const provider = new Web3Provider(window.ethereum);
 
-          if (!(maxFeePerGas && maxPriorityFeePerGas)) {
-            setError('Cent estimate maxFeePerGas and maxPriorityFeePerGas');
-          }
+        const feeData = await provider?.getFeeData();
 
-          const gasAmount = await provider.estimateGas({
-            to: toAddress,
-            from: account,
-            value: amount,
-            maxFeePerGas,
-            maxPriorityFeePerGas,
-          });
+        const maxFeePerGas = BigInt(String(feeData.maxFeePerGas));
+        const maxPriorityFeePerGas = BigInt(String(feeData.maxPriorityFeePerGas));
 
-          const estimatedFee = BigInt(gasAmount * (maxFeePerGas || 1n));
+        if (!(maxFeePerGas && maxPriorityFeePerGas)) {
+          setError('Cant estimate maxFeePerGas and maxPriorityFeePerGas');
 
-          return { amount: estimatedFee, maxFeePerGas, maxPriorityFeePerGas };
+          return;
         }
+
+        const gasAmount = await provider.estimateGas({
+          to: toAddress,
+          from: account || '',
+          value: amount,
+          maxFeePerGas,
+          maxPriorityFeePerGas,
+        });
+
+        const estimatedFee = BigInt(String(gasAmount)) * maxFeePerGas;
+
+        // console.log({ gasAmount: BigInt(String(gasAmount)), maxFeePerGas, maxPriorityFeePerGas });
+
+        return { amount: estimatedFee, maxFeePerGas, maxPriorityFeePerGas };
       } catch (error) {
         if (isProviderRpcError(error)) {
           setError(error.message);
         }
       }
     },
-    [account, provider]
+    [account]
   );
 
   return { getSendCoinFee, error };

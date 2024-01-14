@@ -11,7 +11,7 @@ interface BaseChainInfo {
   readonly chainId: number;
   readonly nativeCurrency: {
     name: string; // e.g. 'Goerli ETH',
-    symbol: ContractKeys | 'eth'; // e.g. 'gorETH',
+    symbol: ContractKeys | 'tBNB'; // e.g. 'gorETH',
     decimals: number; // e.g. 18,
   };
 }

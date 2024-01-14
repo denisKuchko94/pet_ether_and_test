@@ -5,21 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0be0f9ae-70a5-4520-9e65-f3afc620a9f4" name="Changes" comment="add analytics">
-      <change afterPath="$PROJECT_DIR$/globals.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/components/NestedList.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.eslintrc.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/next.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/next.config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/globals.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/layout.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/page.module.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/helpers/getExplorerLink.ts" beforeDir="false" afterPath="$PROJECT_DIR$/helpers/getExplorerLink.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/NestedList.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/NestedList.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/styles.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/styles.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ThemeRegistry/EmotionCache.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ThemeRegistry/EmotionCache.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/ThemeRegistry/ThemeRegistry.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ThemeRegistry/ThemeRegistry.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ThemeRegistry/theme.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ThemeRegistry/theme.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ethers/constants/chainsinfo.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/ethers/constants/chainsinfo.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ethers/hooks/useEstimateGasCoinFee.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/ethers/hooks/useEstimateGasCoinFee.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -165,7 +158,7 @@
       <workItem from="1705043557168" duration="67000" />
       <workItem from="1705075300054" duration="10820000" />
       <workItem from="1705168676005" duration="6363000" />
-      <workItem from="1705234979728" duration="6350000" />
+      <workItem from="1705234979728" duration="8893000" />
     </task>
     <task id="LOCAL-00001" summary="add emotion cash">
       <option name="closed" value="true" />

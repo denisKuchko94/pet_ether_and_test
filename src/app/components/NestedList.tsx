@@ -45,5 +45,6 @@ const TASKS = [
   'Show symbol, decimals, balance of network and tokens',
   'Send all tokens',
   'update balance after transaction',
+  'Almost Estimated gas price',
   //   send transaction using seed phrase
 ];
