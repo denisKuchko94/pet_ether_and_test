@@ -35,8 +35,6 @@ export function useEstimateGasCoinFee() {
 
         const estimatedFee = BigInt(String(gasAmount)) * maxFeePerGas;
 
-        // console.log({ gasAmount: BigInt(String(gasAmount)), maxFeePerGas, maxPriorityFeePerGas });
-
         return { amount: estimatedFee, maxFeePerGas, maxPriorityFeePerGas };
       } catch (error) {
         if (isProviderRpcError(error)) {

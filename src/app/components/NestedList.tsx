@@ -46,5 +46,7 @@ const TASKS = [
   'Send all tokens',
   'update balance after transaction',
   'Almost Estimated gas price',
+  'Get allowance of TTK',
+  'increase Allowance',
   //   send transaction using seed phrase
 ];

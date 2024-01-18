@@ -4,14 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0be0f9ae-70a5-4520-9e65-f3afc620a9f4" name="Changes" comment="add analytics">
+    <list default="true" id="0be0f9ae-70a5-4520-9e65-f3afc620a9f4" name="Changes" comment="fix deploy">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/helpers/getExplorerLink.ts" beforeDir="false" afterPath="$PROJECT_DIR$/helpers/getExplorerLink.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/Imput.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/Input.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/components/NestedList.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/NestedList.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/styles.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/styles.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ThemeRegistry/EmotionCache.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ThemeRegistry/EmotionCache.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ThemeRegistry/ThemeRegistry.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ThemeRegistry/ThemeRegistry.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ethers/constants/chainsinfo.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/ethers/constants/chainsinfo.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/SendToken.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/SendToken.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ethers/hooks/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/ethers/hooks/index.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ethers/hooks/useEstimateGasCoinFee.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/ethers/hooks/useEstimateGasCoinFee.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -51,7 +50,7 @@
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;js.linters.configure.manually.selectedeslint&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/useradmin/Documents/May Project/work_with_contract/src/ethers/hooks&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/useradmin/Documents/May Project/work_with_contract/src/app/components&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
@@ -80,8 +79,8 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/ethers/hooks" />
       <recent name="$PROJECT_DIR$/src/app/components" />
+      <recent name="$PROJECT_DIR$/src/ethers/hooks" />
       <recent name="$PROJECT_DIR$/src/app" />
       <recent name="$PROJECT_DIR$/src/ethers" />
       <recent name="$PROJECT_DIR$/src/ethers/Providers" />
@@ -158,7 +157,10 @@
       <workItem from="1705043557168" duration="67000" />
       <workItem from="1705075300054" duration="10820000" />
       <workItem from="1705168676005" duration="6363000" />
-      <workItem from="1705234979728" duration="8893000" />
+      <workItem from="1705234979728" duration="12815000" />
+      <workItem from="1705333855347" duration="8879000" />
+      <workItem from="1705514458223" duration="6743000" />
+      <workItem from="1705602207003" duration="3035000" />
     </task>
     <task id="LOCAL-00001" summary="add emotion cash">
       <option name="closed" value="true" />
@@ -176,7 +178,15 @@
       <option name="project" value="LOCAL" />
       <updated>1702906554863</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="fix deploy">
+      <option name="closed" value="true" />
+      <created>1705252969687</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1705252969687</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -185,6 +195,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add emotion cash" />
     <MESSAGE value="add analytics" />
-    <option name="LAST_COMMIT_MESSAGE" value="add analytics" />
+    <MESSAGE value="fix deploy" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix deploy" />
   </component>
 </project>

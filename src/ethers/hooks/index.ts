@@ -1,4 +1,5 @@
 export { default as useAccount } from './useAccount';
+export { useAllowance } from './useAllowance';
 export { default as useChain } from './useChain';
 export { useContract } from './useContarct';
 export { useEstimateGasCoinFee } from './useEstimateGasCoinFee';

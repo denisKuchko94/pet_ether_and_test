@@ -4,7 +4,7 @@ import * as React from 'react';
 import { ChangeEvent, useCallback, useState } from 'react';
 
 import { NumberFormatter } from '@/helpers';
-import Input from '@/src/app/components/Imput';
+import Input from '@/src/app/components/Input';
 import { ContractKeys } from '@/src/ethers/constants/chainsinfo';
 import { useEstimateGasCoinFee, useTransfer } from '@/src/ethers/hooks';
 

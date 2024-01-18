@@ -4,6 +4,7 @@ import { Button, Stack, Typography } from '@mui/material';
 import { useMemo } from 'react';
 
 import Amount from '@/src/app/components/Amount';
+import IncreaseAllowance from '@/src/app/components/IncreaseAllowance';
 import NestedList from '@/src/app/components/NestedList';
 import { StyledHomeWrapper } from '@/src/app/styles';
 import { ContractKeys, SupportedChainId } from '@/src/ethers/constants/chainsinfo';
@@ -46,7 +47,7 @@ export default function Home() {
         ) : (
           <Stack direction={'row'} gap={'32px'}>
             <NestedList />
-            <Stack>
+            <Stack gap="32px">
               <Stack direction={'column'} gap={'30px'}>
                 {!!chainId && <Typography variant={'h5'}> ChainId: {String(chainId)}</Typography>}
                 {account && <Typography variant={'h5'}>Account: {account}</Typography>}
@@ -72,6 +73,7 @@ export default function Home() {
                   getUsdt();
                 }}
               />
+              <IncreaseAllowance />
             </Stack>
           </Stack>
         )}
