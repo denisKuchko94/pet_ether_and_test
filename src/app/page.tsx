@@ -4,6 +4,7 @@ import { Button, Stack, Typography } from '@mui/material';
 import { useMemo } from 'react';
 
 import Amount from '@/src/app/components/Amount';
+import BlockPriorityFee from '@/src/app/components/BlockPriorityFee';
 import IncreaseAllowance from '@/src/app/components/IncreaseAllowance';
 import NestedList from '@/src/app/components/NestedList';
 import { StyledHomeWrapper } from '@/src/app/styles';
@@ -45,35 +46,40 @@ export default function Home() {
             </Button>
           </>
         ) : (
-          <Stack direction={'row'} gap={'32px'}>
-            <NestedList />
-            <Stack gap="32px">
-              <Stack direction={'column'} gap={'30px'}>
-                {!!chainId && <Typography variant={'h5'}> ChainId: {String(chainId)}</Typography>}
-                {account && <Typography variant={'h5'}>Account: {account}</Typography>}
+          <Stack gap={'1rem'}>
+            <BlockPriorityFee />
+            <Stack direction={'row'} gap={'32px'}>
+              <Stack width={'100%'}>
+                <NestedList />
               </Stack>
+              <Stack gap="32px">
+                <Stack direction={'column'} gap={'30px'}>
+                  {!!chainId && <Typography variant={'h5'}> ChainId: {String(chainId)}</Typography>}
+                  {account && <Typography variant={'h5'}>Account: {account}</Typography>}
+                </Stack>
 
-              {Number(chainId) !== SupportedChainId.SmartChain && (
-                <>
-                  <Typography> You chain is not correct </Typography>
-                  <Button
-                    onClick={() => {
-                      switchNetwork?.(SupportedChainId.SmartChain);
-                    }}
-                    variant={'outlined'}
-                  >
-                    Switch the net
-                  </Button>
-                </>
-              )}
-              <Amount
-                tokens={uniteTokens}
-                updateBalance={() => {
-                  getMainCurrency();
-                  getUsdt();
-                }}
-              />
-              <IncreaseAllowance />
+                {Number(chainId) !== SupportedChainId.SmartChain && (
+                  <>
+                    <Typography> You chain is not correct </Typography>
+                    <Button
+                      onClick={() => {
+                        switchNetwork?.(SupportedChainId.SmartChain);
+                      }}
+                      variant={'outlined'}
+                    >
+                      Switch the net
+                    </Button>
+                  </>
+                )}
+                <Amount
+                  tokens={uniteTokens}
+                  updateBalance={() => {
+                    getMainCurrency();
+                    getUsdt();
+                  }}
+                />
+                <IncreaseAllowance />
+              </Stack>
             </Stack>
           </Stack>
         )}

@@ -4,14 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0be0f9ae-70a5-4520-9e65-f3afc620a9f4" name="Changes" comment="fix deploy">
+    <list default="true" id="0be0f9ae-70a5-4520-9e65-f3afc620a9f4" name="Changes" comment="get and icrease allowance">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/Imput.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/Input.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/NestedList.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/NestedList.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/SendToken.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/SendToken.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ethers/hooks/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/ethers/hooks/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ethers/hooks/useEstimateGasCoinFee.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/ethers/hooks/useEstimateGasCoinFee.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,7 +45,7 @@
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;js.linters.configure.manually.selectedeslint&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/useradmin/Documents/May Project/work_with_contract/src/app/components&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/useradmin/Documents/May Project/work_with_contract/src/ethers/hooks&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
@@ -79,8 +74,8 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/app/components" />
       <recent name="$PROJECT_DIR$/src/ethers/hooks" />
+      <recent name="$PROJECT_DIR$/src/app/components" />
       <recent name="$PROJECT_DIR$/src/app" />
       <recent name="$PROJECT_DIR$/src/ethers" />
       <recent name="$PROJECT_DIR$/src/ethers/Providers" />
@@ -160,7 +155,17 @@
       <workItem from="1705234979728" duration="12815000" />
       <workItem from="1705333855347" duration="8879000" />
       <workItem from="1705514458223" duration="6743000" />
-      <workItem from="1705602207003" duration="3035000" />
+      <workItem from="1705602207003" duration="4607000" />
+      <workItem from="1705662238422" duration="3232000" />
+      <workItem from="1705843838595" duration="9382000" />
+      <workItem from="1705942023837" duration="8118000" />
+      <workItem from="1706033231338" duration="3600000" />
+      <workItem from="1706119236805" duration="4484000" />
+      <workItem from="1706451402175" duration="7482000" />
+      <workItem from="1706547178340" duration="8181000" />
+      <workItem from="1706639945683" duration="4028000" />
+      <workItem from="1706724425832" duration="6269000" />
+      <workItem from="1706817244278" duration="44000" />
     </task>
     <task id="LOCAL-00001" summary="add emotion cash">
       <option name="closed" value="true" />
@@ -186,7 +191,15 @@
       <option name="project" value="LOCAL" />
       <updated>1705252969687</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="get and icrease allowance">
+      <option name="closed" value="true" />
+      <created>1705605642275</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1705605642275</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -196,6 +209,7 @@
     <MESSAGE value="add emotion cash" />
     <MESSAGE value="add analytics" />
     <MESSAGE value="fix deploy" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix deploy" />
+    <MESSAGE value="get and icrease allowance" />
+    <option name="LAST_COMMIT_MESSAGE" value="get and icrease allowance" />
   </component>
 </project>
